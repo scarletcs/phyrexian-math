@@ -15,18 +15,22 @@ html {
 
 .sym-1 {
   mask-image: url('images/symbol-1.svg');
+  -webkit-mask-image: url('images/symbol-1.svg');
 }
 
 .sym-2 {
   mask-image: url('images/symbol-2.svg');
+  -webkit-mask-image: url('images/symbol-2.svg');
 }
 
 .sym-3 {
   mask-image: url('images/symbol-3.svg');
+  -webkit-mask-image: url('images/symbol-3.svg');
 }
 
 .sym-4 {
   mask-image: url('images/symbol-4.svg');
+  -webkit-mask-image: url('images/symbol-4.svg');
 }
 
 .compound {
@@ -78,6 +82,7 @@ html {
   mask-size: contain;
   content: '';
   mask-image: url('images/quad.svg');
+  -webkit-mask-image: url('images/quad.svg');
 }
 
 .showcase {
