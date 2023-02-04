@@ -1,0 +1,112 @@
+html {
+  font-size: 16px;
+  font-family: sans-serif;
+  color: #630f10;
+}
+
+.sym {
+  /* background-image: var(--sym-1); */
+  background-color: currentColor;
+  mask-repeat: no-repeat;
+  mask-size: contain;
+  width: 1em;
+  height: 1em;
+}
+
+.sym-1 {
+  mask-image: url('images/symbol-1.svg');
+}
+
+.sym-2 {
+  mask-image: url('images/symbol-2.svg');
+}
+
+.sym-3 {
+  mask-image: url('images/symbol-3.svg');
+}
+
+.sym-4 {
+  mask-image: url('images/symbol-4.svg');
+}
+
+.compound {
+  display: flex;
+  flex-flow: column;
+}
+
+.quad {
+  position: relative;
+
+  display: grid;
+  grid-template-columns: 0.5em 0.5em;
+  grid-template-rows: 0.5em 0.5em;
+  grid-template-areas:
+    'ul ur'
+    'bl br';
+
+  width: 1em;
+  height: 1em;
+}
+
+.quad .sym {
+  font-size: 33%;
+  align-self: center;
+  justify-self: center;
+}
+
+.quad .ur {
+  grid-area: ur;
+}
+
+.quad .ul {
+  grid-area: ul;
+}
+
+.quad .br {
+  grid-area: br;
+}
+
+.quad .bl {
+  grid-area: bl;
+}
+
+.quad::before {
+  position: absolute;
+  inset: 0;
+  background-color: currentColor;
+  mask-repeat: no-repeat;
+  mask-size: contain;
+  content: '';
+  mask-image: url('images/quad.svg');
+}
+
+.showcase {
+  --size: 80px;
+  margin: 0 auto;
+  padding: 0;
+
+  display: grid;
+  grid-template-columns: repeat(4, var(--size));
+  grid-template-rows: repeat(4, 1fr);
+  grid-auto-flow: row;
+  grid-gap: 20px;
+  list-style: none;
+  counter-reset: num -1;
+}
+
+.showcase .quad {
+  font-size: var(--size);
+}
+
+.showcase li {
+  counter-increment: num;
+}
+
+.showcase .label {
+  text-align: center;
+  padding: 10px;
+}
+
+.showcase .label::before {
+  content: counter(num);
+}

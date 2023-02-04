@@ -1,0 +1,13 @@
+{
+  "name": "phyrexian-math",
+  "version": "0.0.0",
+  "description": "",
+  "private": true,
+  "author": "scarletcs",
+  "scripts": {
+    "start": "http-server ./src -c-1"
+  },
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}

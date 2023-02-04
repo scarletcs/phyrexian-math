@@ -1,0 +1,5 @@
+<svg width="100%" height="100%" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g id="symbols">
+        <path id="quad" d="M45,0L55,0L55,45C55,45 72.5,45.169 80,46.003C86.757,46.754 100,50 100,50C100,50 86.757,53.249 80,54C72.5,54.833 55,55 55,55L55,100L45,100L45,55C45,55 27.5,54.833 20,54C13.243,53.249 0,50 0,50C0,50 13.243,46.751 20,46C27.5,45.167 45,45 45,45L45,0Z"/>
+    </g>
+</svg>
